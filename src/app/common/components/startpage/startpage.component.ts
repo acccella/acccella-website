@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class StartpageComponent {
 
-  buttonLabels: string[] = ['E-handel', 'Tjänstehantering och schemaläggning', 'Hemsida', 'Statistik och analys', 'Mobilapplikation', 'Intern Kommunikation', 'Finans'];
+  buttonLabels: string[] = ['E-handel', 'Finans', 'Bokning', 'Statistik och analys', 'Mobilapplikation', 'Intern Kommunikation', 'Webbapplikation'];
 
   services = [
     { text: 'Webb.', imageUrl: '../../../../assets/images/webb.png' },
@@ -16,12 +16,12 @@ export class StartpageComponent {
   ];
 
   images = [
-    '../../../../assets/images/dashboard.png',
-    '../../../../assets/images/internt.png',
-    '../../../../assets/images/webb.png',
-    '../../../../assets/images/internt.png',
-    '../../../../assets/images/webb.png',
-    '../../../../assets/images/internt.png',
+    '../../../../assets/images/mobileslide.png',
+    '../../../../assets/images/finance.png',
+    '../../../../assets/images/booking.png',
+    '../../../../assets/images/statistics.png',
+    '../../../../assets/images/mobileslide2.jpg',
+    '../../../../assets/images/cgat.png',
     '../../../../assets/images/webb.png',
   ];
 

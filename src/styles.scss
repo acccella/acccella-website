@@ -1,133 +1,115 @@
 /* Imported fonts */
 @font-face {
     font-family: 'PPNeueMontreal';
-    src: url('./assets/fonts/PPNEUEMONTREAL-BOLD.OTF') format('opentype');
+    src: url('./assets/fonts/PPNEUEMONTREAL-BOLD.ttf') format('truetype'),
+         url('./assets/fonts/PPNEUEMONTREAL-BOLD.woff') format('woff'),
+         url('./assets/fonts/PPNEUEMONTREAL-BOLD.OTF') format('opentype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'PPNeueMontreal';
-    src: url('./assets/fonts/PPNEUEMONTREAL-BOOK.OTF') format('opentype');
+    src: url('./assets/fonts/PPNEUEMONTREAL-BOOK.ttf') format('truetype'),
+         url('./assets/fonts/PPNEUEMONTREAL-BOOK.woff') format('woff'),
+         url('./assets/fonts/PPNEUEMONTREAL-BOOK.OTF') format('opentype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'PPNeueMontreal';
-    src: url('./assets/fonts/PPNEUEMONTREAL-ITALIC.OTF') format('opentype');
+    src: url('./assets/fonts/PPNEUEMONTREAL-ITALIC.ttf') format('truetype'),
+         url('./assets/fonts/PPNEUEMONTREAL-ITALIC.woff') format('woff'),
+         url('./assets/fonts/PPNEUEMONTREAL-ITALIC.OTF') format('opentype');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'PPNeueMontreal';
-    src: url('./assets/fonts/PPNEUEMONTREAL-MEDIUM.OTF') format('opentype');
+    src: url('./assets/fonts/PPNEUEMONTREAL-MEDIUM.ttf') format('truetype'),
+         url('./assets/fonts/PPNEUEMONTREAL-MEDIUM.woff') format('woff'),
+         url('./assets/fonts/PPNEUEMONTREAL-MEDIUM.OTF') format('opentype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'PPNeueMontreal';
-    src: url('./assets/fonts/PPNEUEMONTREAL-SEMIBOLDITALIC.OTF') format('opentype');
-    font-weight: 600;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'PPNeueMontreal';
-    src: url('./assets/fonts/PPNEUEMONTREAL-THIN.OTF') format('opentype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-/* Imported fonts End */
-
-/* Font Styles */
-
-$font-family: "PP Neue Montreal", sans-serif;
+/* Global font styles */
+$font-family: "PPNeueMontreal", sans-serif;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
 $font-weight-small: 100;
 
-h1 {
+/* Font styles for headings, paragraphs, etc. */
+h1, h2, li, p, button p {
     font-family: $font-family;
-    font-size: 100px !important;
     font-style: normal !important;
+}
+
+h1 {
+    font-size: 100px !important;
     font-weight: $font-weight-medium !important;
 }
 
 h2 {
-    font-family: $font-family;
     font-size: 43px !important;
-    font-style: normal !important;
-    font-weight: $font-weight-medium !important;
-}
-
-li {
-    font-family: $font-family;
-    font-size: 21px !important;
-    font-style: normal !important;
     font-weight: $font-weight-medium !important;
 }
 
 p {
-    font-family: $font-family;
     font-size: 26px !important;
-    font-style: normal !important;
     font-weight: $font-weight-small !important;
 }
 
-button p {
-    font-family: $font-family;
+li {
     font-size: 21px;
-    font-style: normal;
-    font-weight: $font-weight-medium;
 }
 
+/* Mobile adjustments */
 @media (max-width: 767px) {
-
     h1 {
-        font-family: $font-family;
         font-size: 40px !important;
-        font-style: normal !important;
-        font-weight: $font-weight-medium !important;
         letter-spacing: 0.2px;
-
     }
 
     h2 {
-        font-family: $font-family;
         font-size: 20px !important;
-        font-style: normal !important;
-        font-weight: $font-weight-medium !important;
-    }
-
-    li {
-        font-family: $font-family;
-        font-size: 21px !important;
-        font-style: normal !important;
-        font-weight: $font-weight-medium !important;
     }
 
     p {
-        font-family: $font-family;
         font-size: 18px !important;
-        font-style: normal !important;
-        font-weight: $font-weight-small !important;
     }
 
+    li {
+        font-size: 18px !important;
+    }
 }
-
-/* Font Styles End */
-
-/* Global Styles */
 
 body {
-    margin: 0;
-    padding: 0;
+    overflow-x: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
+.startpage-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.startpage-header {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.overlay-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.overlay-text-container {
+    max-width: 100%;
+    overflow-x: hidden;
 }

@@ -8,11 +8,16 @@
         gap: 70px;
 
         .footer-100 {
-            font-size: 455px !important;
+            font-size: 423px !important;
             margin-top: -50px;
             background: linear-gradient(90deg, #FFF 22.56%, #9EC2E7 96.65%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @media (max-width: 1920px) {
+                font-size: 321px !important;
+                margin-top: 0px;
+            }
         }
     }
 
@@ -71,6 +76,7 @@
             color: #FFF;
             color: #FFF;
             padding-bottom: 30px;
+            font-family: "PPNeueMontreal";
         }
 
         .footer-link {
@@ -79,23 +85,97 @@
             color: #FFF;
             padding-bottom: 20px;
 
-            font-family: "PP Neue Montreal";
+            font-family: "PPNeueMontreal";
             font-size: 26px;
-            font-weight: 400!important;
+            font-weight: 400 !important;
             transition-timing-function: ease-out;
             transition: 0.5s;
             cursor: pointer;
 
             &:hover {
-                color: #93AE73; 
+                color: #93AE73;
             }
 
         }
     }
+
     .footer-cred {
         margin-top: 60px;
         margin-bottom: 30px;
         color: #FFF;
-        font-size: 18px!important;
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .footer-container {
+        padding: 0;
+        margin: 20px 0 0 0;
+        border-radius: 10px 10px 0 0;
+
+        .footer-happy-container {
+            padding: 40px 30px;
+            --bs-gutter-x: 0 !important;
+            gap: 0;
+            place-self: center;
+
+
+            .footer-100 {
+                font-size: 34vw !important;
+                text-align: center;
+            }
+        }
+
+        .footer-happy-text {
+            margin-top: 0;
+            line-height: 33px;
+            margin-bottom: 35px;
+        }
+
+        .footer-happy-button-container {
+            padding: 15px 18px;
+            border-radius: 10px;
+
+            .footer-happy-button-text {}
+
+            .footer-button {
+
+
+                .material-symbols-outlined {
+                    font-variation-settings:
+                        'FILL' 1,
+                        'wght' 200,
+                        'GRAD' 0,
+                        'opsz' 20;
+                    font-size: 60px;
+                    transition-timing-function: ease-out;
+                    transition: 0.5s;
+                    cursor: pointer;
+                    color: #000;
+                }
+            }
+        }
+
+        .footer-links-container {
+            padding: 0;
+            margin-top: 40px;
+            --bs-gutter-x: 0 !important;
+
+
+            .footer-mobile-links {
+                padding: 0 !important;
+            }
+
+            .footer-header {
+                font-weight: 500;
+            }
+
+            .footer-link {}
+        }
+
+        .footer-cred {
+            padding-left: 30px;
+        }
     }
 }
