@@ -4,8 +4,8 @@
     .startpage-header {
         border-radius: 20px;
         background: #151515;
-        height: 100vh;
-        min-height: 1400px;
+        height: 91vh;
+        min-height: 971px;
         padding: 90px 40px 40px 40px;
 
         .startpage-header-video-container {
@@ -30,9 +30,13 @@
                 z-index: 10;
 
                 .overlay-text-container {
-                    margin-top: 170px;
-                    margin-left: 150px;
+                    margin-top: 3vw;
+                    margin-left: 4vw;
                     max-width: 1208px;
+
+                    @media (max-height: 901px) {
+                        max-width: 1000px;
+                    }
 
                     .video-header {
                         color: white;
@@ -83,12 +87,14 @@
                 .overlay-button-container {
                     position: absolute;
                     right: 60px;
-                    bottom: 60px;
+                    bottom: 50px;
 
 
                     .header-button-container {
-                        width: 398px;
-                        height: 398px;
+                        width: 21vw;
+                        height: 31vh;
+                        max-height: 460px;
+                        max-width: 430px;
                         border-radius: 20px;
                         background: #FFF;
                         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -204,8 +210,8 @@
                 // Ensure that if the button width exceeds 209px, padding is adjusted
                 @media (min-width: 209px) {
                     width: auto;
-                    padding-left: 36px;
-                    padding-right: 36px;
+                    padding-left: 31px;
+                    padding-right: 31px;
                 }
             }
         }
@@ -244,18 +250,23 @@
 
     .services-feature-container {
         gap: 40px;
-        --bs-gutter-x: 0!important;
+        --bs-gutter-x: 0 !important;
 
         .services-feature-text {
-            margin-left: 70px;
+            text-align: center;
+
+            @media (max-width: 768px) {
+                text-align: left;
+            }
 
             .services-text {
-                margin-top: 80px;
+                margin-top: 40px;
                 margin-bottom: 50px;
             }
 
             .services-paragragh {
-                max-width: 700px;
+                max-width: 900px;
+                margin: 0 auto 50px auto;
             }
         }
 
@@ -329,6 +340,10 @@
             color: #FFF;
             max-width: 1000px;
             margin-bottom: 60px;
+
+            @media (max-width: 2170px) and (min-width: 902px) {
+                font-size: 58px !important;
+            }
         }
 
         .technology-text {
@@ -338,9 +353,9 @@
     }
 
     .technology-image {
-        width: 80%;
-        height: 700px;
-        margin-left: 40px;
+        width: 40vw;
+        height: 100%;
+        max-height: 601px;
         background-size: contain;
         background-position: center;
         object-fit: cover;

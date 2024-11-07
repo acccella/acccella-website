@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { StartpageComponent } from './common/components/startpage/startpage.component';
 import { NavbarComponent } from './common/components/navbar/navbar.component';
 import { FooterComponent } from './common/components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './common/components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

@@ -4,7 +4,7 @@
     border-radius: 20px;
 
     .footer-happy-container {
-        padding: 20px 70px;
+        padding: 20px 70px 70px 70px;
         gap: 70px;
 
         .footer-100 {
@@ -22,7 +22,7 @@
     }
 
     .footer-happy-text {
-        margin-top: 50px;
+        margin-top: -30px;
         color: #FFF;
         margin-bottom: 70px;
     }
@@ -68,40 +68,71 @@
         }
     }
 
-    .footer-links-container {
-        padding: 20px 70px;
+    .footer-contact-container {
+        height: calc(100% - 100px);
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 55px;
+        padding: 50px 0px 10px 70px;
 
-        .footer-header {
-            list-style: none;
-            color: #FFF;
-            color: #FFF;
-            padding-bottom: 30px;
-            font-family: "PPNeueMontreal";
+        .footer-contact-header {
+            @media (max-width: 2170px) and (min-width: 902px) {
+                font-size: 58px !important;
+            }
         }
 
-        .footer-link {
-            list-style: none;
-            color: #FFF;
-            color: #FFF;
-            padding-bottom: 20px;
+        .footer-contact-paragrapgh {
+            max-width: 80%;
+        }
 
-            font-family: "PPNeueMontreal";
+        .footer-contact-input {
+            display: flex;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: 0;
+            padding: 0 0 20px 0;
+            width: calc(100% - 50px);
+            max-width: 600px;
             font-size: 26px;
-            font-weight: 400 !important;
-            transition-timing-function: ease-out;
-            transition: 0.5s;
-            cursor: pointer;
 
-            &:hover {
+            &::placeholder {
+                color: #000;
+            }
+
+            &:focus {
                 color: #93AE73;
             }
 
+            &:focus::placeholder {
+                color: #93AE73;
+            }
+        }
+
+        .footer-contact-button {
+            background-color: #000;
+            border-radius: 100px;
+            padding: 20px 60px;
+            color: #FFF;
+            transition: 0.3s ease-in-out;
+            font-size: 18px;
+            margin: 10px 0 40px 0;
+
+            &:hover {
+                background-color: #93AE73;
+                border-color: #93AE73;
+            }
+        }
+
+        .success-message {
+            margin-top: -10px;
+            margin-bottom: 50px;
         }
     }
 
     .footer-cred {
-        margin-top: 60px;
-        margin-bottom: 30px;
+        position: absolute;
+        bottom: 0;
         color: #FFF;
         font-size: 18px !important;
     }

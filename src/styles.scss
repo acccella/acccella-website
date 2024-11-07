@@ -54,16 +54,28 @@ h1, h2, li, p, button p {
 h1 {
     font-size: 100px !important;
     font-weight: $font-weight-medium !important;
+
+    @media (max-height: 901px) {
+        font-size: 80px !important;
+    }
 }
 
 h2 {
     font-size: 43px !important;
     font-weight: $font-weight-medium !important;
+
+    @media (max-height: 901px) {
+        font-size: 36px !important;
+    }
 }
 
 p {
     font-size: 26px !important;
     font-weight: $font-weight-small !important;
+
+    @media (max-height: 901px) {
+        font-size: 21px !important;
+    }
 }
 
 li {
